@@ -26,7 +26,6 @@ export const Modal: React.FC<ModalProps> = ({ title, description, isOpen, onClos
 
   return (
     <Dialog open={isOpen} onOpenChange={onChange}>
-      <DialogTrigger>Open</DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
@@ -37,5 +36,3 @@ export const Modal: React.FC<ModalProps> = ({ title, description, isOpen, onClos
     </Dialog>
   )
 }
-
-export default Modal
