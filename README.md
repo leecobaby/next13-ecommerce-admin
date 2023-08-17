@@ -7,6 +7,8 @@
 - Typescript
 - Tailwindcss
 - Radix UI + Shadcn UI
-- [Clerk Auth](https://dashboard.clerk.com/)
 - [zustand](https://github.com/pmndrs/zustand)
-- [planetscale - serverless mysql](https://planetscale.com/)
+- Cloud Platform
+  - [Clerk Auth](https://dashboard.clerk.com/)
+  - [planetscale - serverless mysql](https://planetscale.com/)
+  - [Cloudinary - image hosting](https://cloudinary.com/)
