@@ -5,7 +5,7 @@ import prismadb from '@/lib/prismadb'
 
 export async function PATCH(
   req: Request,
-  { params }: { params: { storeId: string; billboard: string } }
+  { params }: { params: { storeId: string; billboardId: string } }
 ) {
   try {
     const { userId } = auth()
@@ -20,7 +20,7 @@ export async function PATCH(
       return new NextResponse(`${!label ? 'Label' : 'ImageUrl'} is required `, { status: 400 })
     }
 
-    if (!params.billboard) {
+    if (!params.billboardId) {
       return new NextResponse('Billboard id is required', { status: 400 })
     }
 
@@ -37,7 +37,7 @@ export async function PATCH(
 
     const billboard = await prismadb.billboard.updateMany({
       where: {
-        id: params.storeId
+        id: params.billboardId
       },
       data: {
         label,
@@ -80,7 +80,7 @@ export async function DELETE(
 
     const billboard = await prismadb.billboard.deleteMany({
       where: {
-        id: params.storeId
+        id: params.billboardId
       }
     })
 
