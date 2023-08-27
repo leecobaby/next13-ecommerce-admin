@@ -150,6 +150,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
       <Separator />
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full">
+          {/* bug */}
           <FormField
             control={form.control}
             name="images"
