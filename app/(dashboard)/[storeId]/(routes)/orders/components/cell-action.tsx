@@ -4,7 +4,7 @@ import { toast } from 'react-hot-toast'
 import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu'
 import { Copy, Edit, MoreHorizontal, Trash } from 'lucide-react'
 
-import { BillboardColumn } from './columns'
+import { OrderColumn } from './columns'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -18,7 +18,7 @@ import axios from 'axios'
 import { AlertModal } from '@/components/modals/alert-modal'
 
 interface CellActionProps {
-  data: BillboardColumn
+  data: OrderColumn
 }
 
 export const CellAction: React.FC<CellActionProps> = ({ data }) => {
