@@ -12,3 +12,7 @@
   - [Clerk Auth](https://dashboard.clerk.com/)
   - [planetscale - serverless mysql](https://planetscale.com/)
   - [Cloudinary - image hosting](https://cloudinary.com/)
+- Payment
+  - [Stripe](https://stripe.com/)
+- Serverless
+  - [Vercel](https://vercel.com/)
